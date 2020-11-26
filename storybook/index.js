@@ -6,10 +6,20 @@ import { withKnobs } from '@storybook/addon-knobs';
 
 import './rn-addons';
 
+import { Asset } from "expo-asset";
+import * as Font from "expo-font";
 
-import { loadAllAssests } from '../src/App';
+const loadAllAssests = [
+  Asset.loadAsync([require("../assets/logo.png")]),
+  Font.loadAsync({
+    //   ...Icon.Ionicons.font, // This is the font that we are using for our tab bar
+    "Interstate-Regular": require("../assets/fonts/Interstate-Regular.ttf"),
+    //   bold: require('../assets/fonts/CircularStd-Bold.ttf'),
+  }),
+];
+
 Promise.all(loadAllAssests).then(() => {
-  console.log('loadResourcesAsync done'); // this is quick enough that it works.
+  console.log('loadResourcesAsync done');
 });
 
 // enables knobs for all stories
