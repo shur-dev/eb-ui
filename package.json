@@ -1,5 +1,6 @@
 {
   "name": "ebumps-ui",
+  "version": "0.0.1",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
   "react-native": "src/index.js",
