@@ -5,22 +5,43 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "storybook": "start-storybook -p 7007",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@storybook/addon-backgrounds": "^6.1.6",
     "expo": "~39.0.2",
+    "expo-asset": "~8.2.0",
     "expo-status-bar": "~1.0.2",
+    "native-base": "^2.13.14",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-39.0.4.tar.gz",
-    "react-native-web": "~0.13.12"
+    "react-native-base": "^1.1.0",
+    "react-native-paper": "^4.4.1",
+    "react-native-web": "~0.13.12",
+    "styled-component-variant": "^1.0.1",
+    "styled-components": "^5.2.1",
+    "styled-theming": "^2.2.0"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0",
+    "@storybook/addon-actions": "^5.3",
+    "@storybook/addon-knobs": "^5.3",
+    "@storybook/addon-links": "^5.3",
+    "@storybook/addon-ondevice-actions": "^5.3.23",
+    "@storybook/addon-ondevice-knobs": "^5.3.23",
+    "@storybook/react-native": "^5.3.23",
+    "@storybook/react-native-server": "^5.3.23",
     "@types/react": "~16.9.35",
     "@types/react-dom": "~16.9.8",
     "@types/react-native": "~0.63.2",
+    "babel-loader": "^8.2.1",
     "typescript": "~3.9.5"
   },
-  "private": true
+  "private": true,
+  "resolutions": {
+    "styled-components": "^5"
+  }
 }
